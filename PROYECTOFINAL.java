@@ -18,12 +18,10 @@ class Notifica implements Notificador {
 public class PROYECTOFINAL {
 
     // Mapa para almacenar los productos y su stock
-
     private static Map<String, Integer> inventario = new HashMap<>();
     private static Notificador notificador;
 
     // Método para inicializar el inventario
-
     private static void inicializarInventario() {
 
         inventario.put("Leche", 50);
@@ -42,7 +40,6 @@ public class PROYECTOFINAL {
     }
 
     // Método para mostrar el inventario actual
-
     private static void mostrarInventario() {
         System.out.println("Inventario Actual:");
         System.out.println("------------------");
@@ -53,7 +50,6 @@ public class PROYECTOFINAL {
     }
 
     // Método para realizar una compra
-
     private static void comprarProducto(String producto, int cantidad) {
         if (inventario.containsKey(producto)) {
             int stockActual = inventario.get(producto);
